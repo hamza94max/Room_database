@@ -1,21 +1,26 @@
 package com.hamza.room;
 
+import android.database.Observable;
+
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 
 import java.util.List;
 
+import io.reactivex.Completable;
+import io.reactivex.Single;
 
-    @Dao
+
+@Dao
     interface PostsDao {
 
       @Insert
-      void insertPost (Post post);
+      Completable insertPost (Post post);
 
 
       @Query("Select * from posts_table")
-      List<Post>getPosts();
+      Single< List<Post> > getPosts();
 
 
 
