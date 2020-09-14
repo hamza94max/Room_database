@@ -1,7 +1,7 @@
 # Room_database
 
 
-Dependencies
+**Dependencies**
 
     //Room
     def room_version = "2.2.5"
