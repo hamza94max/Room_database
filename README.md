@@ -15,3 +15,6 @@
     def rxJavaVersion = '2.1.1'
     implementation "io.reactivex.rxjava2:rxandroid:$rxJavaVersion"
     implementation "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+    
+  **Guide** <br/>
+    [Room database](https://developer.android.com/training/data-storage/room)
